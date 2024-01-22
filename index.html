@@ -21,7 +21,7 @@
             theme: {
                 extend: {
                     colors: {
-                        clifford: '#da373d',
+                        'txt-clr': '#777',
                     }
                 }
             }
@@ -39,20 +39,23 @@
     <header class="container mx-auto">
         <div class="hero">
             <div class="hero-content flex-col lg:flex-row">
-                <div>
-                    <h1 class="text-7xl font-extrabold">
+                <div class="gap-y-8">
+                    <h1 class="text-7xl font-extrabold leading-tight">
                         It's good <br>
                         tea time at The <br>
                         Tea House</h1>
-                    <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum Satisfaction To Your Taste Buds.
+                    <p class="py-6">Tea and Botanical Solutions Supplier Give Optimum <br>
+                        satisfaction To Your Taste Buds.
                     </p>
-                    <button class="btn btn-primary">Explore More</button>
+                    <button class="btn text-white bg-gradient-to-r from-orange-500 to-[#F00]">Explore More
+                        <i class="fa-solid fa-arrow-right fa-rotate-by" style="--fa-rotate-angle: -45deg;"></i>
+                    </button>
                 </div>
                 <div>
                     <img src="images/banner.png" class="max-w-sm" />
-                    <div class="flex bg-white items-center gap-4 p-5 w-60 -mt-20">
-                        <i class="fa-solid fa-star text-3xl text-[#fbbf24]"></i>
-                        <div class="bg-white rounded-lg">
+                    <div class="flex items-center gap-4  w-60 -mt-20">
+                        <i class="fa-solid fa-star text-3xl bg-white text-[#fbbf24]"></i>
+                        <div class="bg-white rounded-lg p-4">
                             <h3 class="text-3xl font-bold">5.00</h3>
                             <p class="">Trust Pilot Ratings</p>
                         </div>
@@ -63,7 +66,59 @@
         </div>
     </header>
     <main class="container mx-auto">
-
+        <section class="text-center">
+            <h1 class="text-4xl font-extrabold">OurOur Featured Products</h1>
+            <p class="txt-clr mt-5 max-w-4xl mx-auto">There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. </p>
+        </section>
+        <!-- card -->
+        <section>
+            <div class="flex flex-col lg:flex-row gap-6 mt-12">
+                <!-- first card -->
+                <div class="card bg-gradient-to-b from-[#F4F4F4] to-white flex-1">
+                    <figure class="px-5 pt-10">
+                      <img src="images/tea-1.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Milk tea</h2>
+                      <p>Creamer could be replaced <br>
+                         by fresh milk</p>
+                    </div>
+                  </div>
+                <!-- second card -->
+                <div class="card bg-gradient-to-b from-[#F4F4F4] to-white flex-1">
+                    <figure class="px-5 pt-10">
+                      <img src="images/tea-2.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Black tea</h2>
+                      <p>Creamer could be replaced <br>
+                         by fresh milk</p>
+                    </div>
+                  </div>
+                <!-- third card -->
+                <div class="card bg-gradient-to-b from-[#F4F4F4] to-white flex-1">
+                    <figure class="px-5 pt-10">
+                      <img src="images/tea-3.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Lemon tea</h2>
+                      <p>Creamer could be replaced <br>
+                         by fresh milk</p>
+                    </div>
+                  </div>
+                <!-- fourth card -->
+                <div class="card bg-gradient-to-b from-[#F4F4F4] to-white flex-1">
+                    <figure class="px-5 pt-10">
+                      <img src="images/tea-4.png" alt="Shoes" class="rounded-xl" />
+                    </figure>
+                    <div class="card-body items-center text-center">
+                      <h2 class="card-title">Green tea</h2>
+                      <p>Creamer could be replaced <br>
+                         by fresh milk</p>
+                    </div>
+                  </div>
+            </div>
+        </section>
     </main>
     <footer>
 
